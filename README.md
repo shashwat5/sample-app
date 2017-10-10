@@ -31,9 +31,9 @@ This is how the ci logs for this project looks like:
 
 ## Best practices
 
-* Baseline the styling requirements of your project beforehand and create the style checked as a common artifact for different projects to use
+* Baseline the styling requirements of your project beforehand and create the style checklist configurations as a common artifact for different projects to use
 * Think about using a code coverage tool (a common choice is [istanbul](https://github.com/gotwarlost/istanbul))
 * Modularize the logic into different modules. A single node JS file should be solving a single objective
-* Extarnalize your configurations (common choice is to use [nconf](https://github.com/indexzero/nconf))
+* Externalize your configurations (common choice is to use [nconf](https://github.com/indexzero/nconf), this has capability to pick configurations from various data sources)
 * Avoid boilerplate code, there are several utility libraries that will do heavy lifting with efficient implementation. Common choices are [lodash](https://lodash.com/), [underscore](http://underscorejs.org/)
 * Use randomized test data, consider using [chancejs](http://chancejs.com/) to setup a high range of test data for your unit tests
