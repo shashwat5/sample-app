@@ -25,6 +25,8 @@ The project had added the npm script for CI for the app validation.
 
 * `npm i`
 * `npm run ci`
+This is how the ci logs for this project looks like:
+![ci logs][./sample-app-ci-logs.png]
 
 ## Best practices
 
