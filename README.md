@@ -4,8 +4,8 @@
 
 * Entrypoint of this node module is index.js
 * the source files are contained in [src](./src) directory
-** Client files are contained in [src/client](./src/client) directory
-** Server side files is contained in the [src/server](./src/server) directory
+  * Client files are contained in [src/client](./src/client) directory
+  * Server side files is contained in the [src/server](./src/server) directory
 
 ## Keeping it fresh
 
@@ -25,3 +25,12 @@ The project had added the npm script for CI for the app validation.
 
 * `npm i`
 * `npm run ci`
+
+## Best practices
+
+* Baseline the styling requirements of your project beforehand and create the style checked as a common artifact for different projects to use
+* Think about using a code coverage tool (a common choice is [istanbul](https://github.com/gotwarlost/istanbul))
+* Modularize the logic into different modules. A single node JS file should be solving a single objective
+* Extarnalize your configurations (common choice is to use [nconf](https://github.com/indexzero/nconf))
+* Avoid boilerplate code, there are several utility libraries that will do heavy lifting with efficient implementation. Common choices are [lodash](https://lodash.com/), [underscore](http://underscorejs.org/)
+* Use randomized test data, consider using [chancejs](http://chancejs.com/) to setup a high range of test data for your unit tests
