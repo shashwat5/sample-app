@@ -4,7 +4,7 @@
 
 * Entrypoint of this node module is index.js
 * the source files are contained in [src](./src) directory
-  * Client files are contained in [src/client](./src/app) directory
+  * Client files are contained in [src/app](./src/app) directory
   * Server side files is contained in the [src/server](./src/server) directory
 * To create a new project use `npm init`
 
@@ -32,7 +32,7 @@ The project had added the npm script for CI for the app validation.
 ## Latest and greatest
 
 This application show cases how you can write modularized code in your client side javascript.
-* The usage of `webpack` let's us make use `require js` in the client side code and modularize the contents of an otherwise mamoth javascript file into manageable modules
+* The usage of `webpack` lets us make use of `require js` in the client side code and modularize the contents of an otherwise mamoth javascript file into manageable modules
 * The usage of `babel-loader` in conjunction to webpack allows us to work with latest javascript version in the client side code
 * The project uses `less` css preprocessor to modularize your css and enable on demand css inclusions
 * I have not used any specific client framework to showcase this design can be achieved using any client side javascript framework
@@ -58,8 +58,8 @@ The npm script `npm run start` will invoke the following in order:
 * test: runs test against your server and client side code
 * `node index`: executes the entrypoint of this application to start the application
 
-You should see the following logs on starting the application:
+### You should see the following logs on starting the application:
 ![sample-app-startup](./sample-app-startup-logs.png)
-Goto `http://localhost:3001`, you should see the below web page:
+### Goto `http://localhost:3001`, you should see the below web page:
 ![home-page](./home-page.png)
 
