@@ -1,9 +1,8 @@
 var express = require("express");
-
+var routes = require("./routes.js");
 var app = express();
 
-app.get("/health", (req, res) => {
-	res.status(200).send("OK");
-});
+app.use(express.static("build"));
+app.use(routes);
 
 module.exports = app;
