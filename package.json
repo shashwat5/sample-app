@@ -1,12 +1,19 @@
 {
   "name": "sample-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sample node js web application",
   "main": "index.js",
+  "repository": "https://github.com/shashwat5/sample-app.git",
   "scripts": {
+    "html": "rimraf build && mkdirp build && cp src/app/index.html build/",
+    "js": "webpack",
+    "build": "npm run html && npm run js",
     "lint-server": "eslint src/server/",
+    "lint-client": "eslint src/app/",
+    "lint": "npm run lint-server && npm run lint-client",
     "test": "mocha test/**/*.js",
-    "ci": "npm run lint-server && npm test"
+    "ci": "npm run lint && npm run build && npm test",
+    "start": "npm run ci && node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +22,19 @@
     "lodash": "~4.17.4"
   },
   "devDependencies": {
+    "babel-core": "~6.26.0",
+    "babel-loader": "~7.1.2",
     "chai": "~4.1.2",
     "chai-as-promised": "~7.1.1",
+    "css-loader": "~0.28.7",
     "eslint": "~4.8.0",
     "eslint-plugin-react": "~7.4.0",
-    "mocha": "~3.5.3"
+    "jsdom": "~11.3.0",
+    "less": "~2.7.2",
+    "less-loader": "~4.0.5",
+    "mkdirp": "~0.5.1",
+    "mocha": "~3.5.3",
+    "style-loader": "~0.19.0",
+    "webpack": "~3.7.1"
   }
 }
