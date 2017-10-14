@@ -8,7 +8,7 @@ module.exports.get = function(url) {
 				responseText: "Unexpected Error"
 			});
 		};
-		xhttp.onreadystatechange = () => {
+		xhttp.onreadystatechange = function() {
 			if (this.readyState === 4 && this.status !== 0) {
 				if(this.status < 400){
 					resolve(this);
