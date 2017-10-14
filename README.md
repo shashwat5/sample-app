@@ -28,6 +28,7 @@ The project had added the npm script for CI for the app validation.
 
 * `npm i`
 * `npm run ci`
+* Check [travis](https://travis-ci.org/shashwat5/sample-app) for build history of the app
 
 ## Latest and greatest
 
