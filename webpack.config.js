@@ -1,6 +1,12 @@
+var path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
 	entry: "./src/app/app.js",
-	output: { filename: "./build/index.js" },
+	output: {
+		path: path.resolve("build"),
+		filename: "index.js"
+	},
 	module: {
 		rules: [
 			{
@@ -14,7 +20,10 @@ module.exports = {
             		{ loader: "css-loader" },
             		{ loader: "less-loader" }
             	]
-        	}
-		]
-	}
+        	}]
+	},
+	plugins: [new HtmlWebpackPlugin({
+		favicon: 'src/app/images/favicon.ico',
+		template: 'src/app/index.html'
+	})]
 };
