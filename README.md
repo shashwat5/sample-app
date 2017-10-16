@@ -1,3 +1,4 @@
+![](https://travis-ci.org/shashwat5/sample-app.svg?branch=master)
 # Sample app
 
 ## Structure of the app
